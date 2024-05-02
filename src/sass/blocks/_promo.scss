@@ -1,0 +1,217 @@
+.promo {
+
+  padding: 0px 62px 235px 62px;
+
+  h1 {
+    display: block;
+    position: relative;
+    top: 200px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 64px;
+    /* 100% */
+    letter-spacing: -2.56px;
+    text-transform: uppercase;
+  }
+
+  &__main_photo {
+
+    z-index: -2;
+    position: relative;
+    height: 742px;
+
+    .women {
+      display: block;
+      position: absolute;
+      border-radius: 500px;
+      top: 23px;
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+
+    .frame {
+
+      display: block;
+      position: absolute;
+      border-radius: 500px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+
+
+  }
+
+  .banana {
+    display: block;
+    position: absolute;
+    width: 183.21px;
+    height: 124.613px;
+    transform: rotate(20deg);
+    top: 335px;
+    left: 200px;
+    z-index: -4;
+  }
+
+  .strawberry {
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    transform: rotate(20deg);
+    right: 190px;
+    top: 160px;
+  }
+
+  &__descr {
+    position: absolute;
+    left: 60px;
+    top: 550px;
+    color: #FFF;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.56px;
+  }
+
+  &__watermelon {
+    padding: 103px 25px 40px 25px;
+    position: absolute;
+    left: 62px;
+    top: 694px;
+    width: 249px;
+    height: 387px;
+    border-radius: 500px;
+    background: #A4CB66;
+
+    &-text {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #FFF;
+      text-align: center;
+      text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      /* 116.667% */
+      letter-spacing: -0.48px;
+      text-transform: uppercase;
+    }
+
+  }
+
+  &__basket {
+    padding: 61px 40px 141px 50px;
+    position: absolute;
+    right: 62px;
+    top: 420px;
+    border-radius: 500px;
+    background: #F5CE13;
+    width: 252px;
+    height: 387px;
+
+    &-text {
+      color: #FFF;
+      text-align: center;
+      text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+      font-family: "DM Sans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 14px;
+      /* 116.667% */
+      letter-spacing: -0.48px;
+      text-transform: uppercase;
+    }
+
+
+
+
+
+  }
+
+  .promo_btn {
+    padding: 21px 8px 19px 15px;
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    background-color: white;
+    border-radius: 100%;
+    border: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+      background-color: orange;
+      border-radius: 100%;
+      transition: 1s;
+
+    }
+
+    span {
+      display: block;
+      color: #AE1332;
+      text-align: center;
+      text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -1.12px;
+      text-transform: uppercase;
+      width: 84px;
+      transform: rotate(-14deg);
+    }
+  }
+
+  &__tags {
+    position: absolute;
+    right: 200px;
+    display: grid;
+    grid-template-columns:125px 125px;
+    grid-template-rows: 38px 38px;
+
+    gap: 8px;
+
+  }
+
+  &__item {
+    padding: 12px 32px 12px 32px;
+    border-radius: 1000px;
+    border: 1px solid #FFF;
+    
+   
+    
+
+    p {
+      @include p-style;
+  
+    }
+
+  }
+  &__item_short  {
+    position: relative;
+    left: 40px;
+    padding: 12px 32px 12px 32px;
+    border-radius: 1000px;
+    border: 1px solid #FFF;
+  
+ 
+    
+   
+    
+   
+ 
+    p {
+      @include p-style;
+     
+    }
+   
+
+  }
+}
