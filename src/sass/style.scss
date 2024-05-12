@@ -15,7 +15,7 @@ x
 
 .container {
    padding: 0 10px;
-   max-width: 1280px;
+   max-width: 1400px;
    /* менять размер зависит от макета */
    margin: 0 auto;
 }
@@ -31,6 +31,10 @@ x
 @import "blocks/promo";
 @import "blocks/order";
 @import "blocks/price";
+@import "blocks/about";
+@import "blocks/footer";
+
+
 
 body {
    background-color: #AE1332;

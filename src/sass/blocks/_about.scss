@@ -1,0 +1,114 @@
+.about {
+  position: relative;
+  padding-bottom: 10rem;
+
+  .covered {
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    transform: translate(40%);
+    display: block;
+    color: #FFF;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4rem;
+    /* 100% */
+    letter-spacing: -0.16rem;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 45rem 25rem;
+    justify-content: center;
+    column-gap: 1rem;
+
+
+  }
+
+  .big {
+    width: 45rem;
+    height: 31.50rem;
+    object-fit: cover;
+    border-radius: 1.25rem;
+
+  }
+
+  &__descr {
+    margin: 5rem auto;
+    max-width: 30.75rem;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: "DM Sans";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem;
+    /* 128.571% */
+    letter-spacing: -0.035rem;
+  }
+
+
+
+  .form {
+    margin: auto;
+    text-align: center;
+    width: 18.25rem;
+    height: 3rem;
+    border-radius: 6.25rem;
+    border: 1px solid rgba(255, 255, 255, .3);
+
+
+
+
+  }
+
+  .email {
+
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    border: none;
+
+    &::placeholder {
+      color: #FFF;
+      opacity: 0.5;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+
+    &:focus {
+      outline: none;
+    }
+
+
+  }
+
+  button {
+    color: white;
+    margin-right: -1.1rem;
+    padding: 0.9375rem 2.1875rem;
+    border-radius: 6.25rem;
+    background: #9DC162;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    /* 128.571% */
+    letter-spacing: -0.035rem;
+    text-transform: capitalize;
+
+
+  }
+
+
+
+}
