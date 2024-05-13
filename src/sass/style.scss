@@ -1,5 +1,10 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/animation";
+@import "libs/bootstrap-reboot.min";
+@import "libs/slick";
+@import "libs/animate";
 
-@import "./libs/bootstrap-reboot.min";
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,);
 
 
@@ -8,10 +13,6 @@
    margin: 0;
    padding: 0;
 }
-x
-
-
-
 
 .container {
    padding: 0 10px;
@@ -20,22 +21,17 @@ x
    margin: 0 auto;
 }
 
-@import "base/variables";
-@import "base/mixins";
-@import "base/animation";
-@import "libs/bootstrap-reboot.min";
-@import "libs/slick";
-@import "libs/animate";
-@import "base/media";
 @import "blocks/nav";
 @import "blocks/promo";
 @import "blocks/order";
 @import "blocks/price";
 @import "blocks/about";
 @import "blocks/footer";
+@import "base/media";
 
 
 
 body {
    background-color: #AE1332;
+   min-width: 78rem;
 }

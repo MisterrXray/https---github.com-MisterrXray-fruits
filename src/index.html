@@ -58,7 +58,7 @@
    <main>
       <section class="promo">
          <div class="container">
-            <h1>
+            <h1 class="promo__title">
                fresh harvest box <br>
                is your one-stop place for <br> a delicious fruit basket
             </h1>
@@ -104,12 +104,12 @@
                   and a greatb source of <br> hydration
                </div>
             </div>
-            <div class="promo__basket">
+            <div class="promo__basket_gold">
                <img src="./icons/basket.png" alt="basket">
-               <div class="promo__basket-text">Sweet and juicy, strawberries are packed with vitamin C and antioxidants,
+               <div class="promo__basket_gold-text">Sweet and juicy, strawberries are packed with vitamin C and antioxidants,
                   making them <br> a delicious and healthy <br> snack</div>
             </div>
-            <button class="promo_btn"><span>shop now</span></button>
+            <button id="scrollabout" type="button" class="promo_btn"><span>shop now</span></button>
             <div class="promo__tags">
                <div class="promo__item">
                   <p>#organic</p>
@@ -174,7 +174,7 @@
                <div class="price__item"><span>Strawberry</span>
                   <img src="./img/products/product 1.png" alt="test">
                   <p>Plant</p>
-                  <div class="price__label">100 UAH / kg</div>
+                  <a href="" class="price__label">100 UAH / kg</a>
                </div>
                <div class="price__item"><span>Banana</span>
                   <img src="./img/products/product 2.png" alt="test">
@@ -225,7 +225,7 @@
                      <div class="price__label">100 UAH / kg</div>
                   </div>
                </div>
-               <div class="price__item"> <span>Kiwi</span>
+               <div class="price__kiwi"> <span>Kiwi</span>
                   <img src="./img/products/product 9.png" alt="test">
                   <div class="price__text">
                      <p>Plant</p>
@@ -233,10 +233,80 @@
                   </div>
                </div>
             </div>
-            <button class="price__order">order</button>
+            <button id="openmodal" class="price__order" type="button">order</button>
+
+            <div id="basket" class="price__basket_active">
+               <div class="price__basket_title">Your Order</div>
+               <div class="price__basket_block">
+                  <div style="background: #F8766B;" class="price__basket_item">
+                     <input class="price__basket_input" type="checkbox">
+                     <img src="./icons/bascket1.png" alt="fruits">
+                     <div class="price__basket_title"></div>
+                     <div class="price__basket_subtitle"></div>
+                  </div>
+
+                  <div style="background: #EDD251;" class="price__basket_item-apple">
+                     <input class="price__basket_input" type="checkbox">
+                     <img src="./icons/bascket2.png" alt="fruits">
+                     <div class="price__basket_title"></div>
+                     <div class="price__basket_subtitle"></div>
+                  </div>
+
+                  <div style="background: #9DC262;" class="price__basket_item">
+                     <input class="price__basket_input" type="checkbox">
+                     <img src="./icons/bascket3.png" alt="fruits">
+                     <div class="price__basket_title"></div>
+                     <div class="price__basket_subtitle"></div>
+                  </div>
+                  <form id="basket_form" action="./mailer/smart.php" class="basket">
+                     <input class="contact" type="name" placeholder="Enter full name..." required>
+                     <input class="contact" type="email" placeholder="Enter email..." required>
+                     <input class="contact" type="card" placeholder="Enter card.." required>
+                     <textarea autocomplete="off" name="form" id="" placeholder="Enter comments..."
+                        class="price__form-descr"></textarea>
+                     <button id="price__btn" class="price__btn" type="submit">Submit</button>
+                  </form>
+                  <button class="close">
+                     <svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                           <path d="M21 7L7 21" stroke="#AE1332" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                           <path d="M7 7L21 21" stroke="#AE1332" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                        </svg>
+                     </svg>
+                  </button>
+                  <div class="price__form-girl">
+                     <img src="./icons/form.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div id="price__thanks" style="background-color: #E03F5E;" class="price__thanks">
+               <div class="price_thanks-img">
+                  <img src="./icons/thanks.png" alt="thanks">
+               </div>
+               <div class="price__thanks-text">
+                  <div class="price__thanks-title">tHANK YOU</div>
+                  <div class="price__thanks-subtitle">Thank you for your order! Our team is preparing your box with
+                     fresh,
+                     delicious fruits and vegetables, and we'll deliver it straight to your doorstep. We appreciate your
+                     business and look forward to providing you with the best possible experience!</div>
+               </div>
+               <button type="button" class="price__close-thanks">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                     <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                     <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  </svg>
+
+
+               </button>
+
+            </div>
          </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
          <div class="container">
             <h2 class="covered"> Fresh Harvest Box has <br> got you covered</h2>
             <div class="about__content">
@@ -250,14 +320,14 @@
                <input class="email" type="email" name="email" placeholder="Enter email..." required>
                <button>Send</button>
             </form>
-            </div>
+         </div>
       </section>
    </main>
    <footer class="footer">
       <div class="container">
          <div class="footer__logo">
             <img src="./img/image.png" alt="women">
-          <a href="#" class="footer__title">fresh harvest box</a>
+            <a href="#" class="footer__title">fresh harvest box</a>
             <div class="footer__grid">
                <div class="footer__item"></div>
                <div class="footer__item"></div>
@@ -270,12 +340,36 @@
                <div class="footer__item"></div>
             </div>
          </div>
-
-      
+         <div class="footer__links">
+            <ul class="footer__list ">
+               <li><a href="#">How It Works</a></li>
+               <li><a href="#">Fruits</a></li>
+               <li><a href="#">Contacts</a></li>
+            </ul>
+         </div>
+         <div class="footer__social">
+            <div class="footer__items">
+               <div class="footer__icon"><img src="./icons/Frame 1.svg" alt="faccebook"></div>
+            </div>
+            <div class="footer__items">
+               <div class="footer__icon"><img src="./icons/frame2.svg" alt="instagram"></div>
+            </div>
+            <div class="footer__items">
+               <div class="footer__icon"><img src="./icons/Frame3.svg" alt="youtube"></div>
+            </div>
+         </div>
+         <footer class="footer__adress">
+            <a href="tel:+380684439426" class="footer__phone">+380 (68) 443-94-26</a>
+            <div class="footer__text">1678 S. Pioneer Road
+               Salt Lake City
+               UT 84104</div>
+         </footer>
       </div>
-
    </footer>
 
 
 
+
+
+   <script src="./js/script.js"></script>
 </body>
