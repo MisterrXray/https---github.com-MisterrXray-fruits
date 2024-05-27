@@ -255,8 +255,12 @@
 
   }
 
+<<<<<<< HEAD
   &__basket_active {
     position: relative;
+=======
+  &__bascket_active {
+>>>>>>> 29909a5a1fc143af5aebfe26c8ecdd8821e3e1c0
     display: none;
     padding: 2.5rem 2.5rem 2.5rem 2.5rem;
     width: 55.6875rem;
@@ -266,7 +270,11 @@
     margin: 0 auto;
   }
 
+<<<<<<< HEAD
   &__basket_title {
+=======
+  &__bascket_title {
+>>>>>>> 29909a5a1fc143af5aebfe26c8ecdd8821e3e1c0
     color: #AE1332;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
     font-family: "DM Sans";
@@ -279,7 +287,11 @@
     text-transform: uppercase;
   }
 
+<<<<<<< HEAD
   &__basket_block {
+=======
+  &__bascket_block {
+>>>>>>> 29909a5a1fc143af5aebfe26c8ecdd8821e3e1c0
     margin-top: 2.5rem;
     display: grid;
     grid-template-columns: 16.0625rem 16.0625rem 16.0625rem;
@@ -289,26 +301,40 @@
 
   }
 
+<<<<<<< HEAD
   &__basket_item {
     position: relative;
     padding: 2.5rem 3rem 0.9rem 1.2rem;
     border-radius: 1.25rem;
 
+=======
+  &__bascket_item {
+    position: relative;
+    padding: 2.5rem 2.63rem 0.9rem 2.62rem;
+    border-radius: 1.25rem;
+>>>>>>> 29909a5a1fc143af5aebfe26c8ecdd8821e3e1c0
     &-apple {
       position: relative;
       border-radius: 1.25rem;
       padding: 2.5rem 2.63rem 0.9rem 0.9rem;
     }
 
+<<<<<<< HEAD
 
   }
 
   &__basket_input {
+=======
+  
+  }
+  &__bascket_input {
+>>>>>>> 29909a5a1fc143af5aebfe26c8ecdd8821e3e1c0
     position: absolute;
     right: 1rem;
     top: 0.80rem;
   }
 
+<<<<<<< HEAD
   .contact {
     margin-bottom: 1rem;
     border-radius: 6.25rem;
@@ -424,6 +450,8 @@
     right: 0.5rem;
     top: 1rem;
   }
+=======
+>>>>>>> 29909a5a1fc143af5aebfe26c8ecdd8821e3e1c0
 
 
 }
